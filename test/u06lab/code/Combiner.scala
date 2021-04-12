@@ -1,7 +1,5 @@
 package u06lab.code
 
-import org.junit.jupiter.api.{Assertions, Test}
-import Assertions._
 
 class TryFunctions {
   @Test

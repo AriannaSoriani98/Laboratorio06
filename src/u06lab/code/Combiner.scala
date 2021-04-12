@@ -13,11 +13,23 @@ trait Functions {
 
 object FunctionsImpl extends Functions {
 
-  override def sum(a: List[Double]): Double = ???
+  override def sum(a: List[Double]): Double = {
+    var tot: Double = 0
+    for(i <- a) tot += i
+    tot
+  }
 
-  override def concat(a: Seq[String]): String = ???
+  override def concat(a: Seq[String]): String = {
+    var concat:String =""
+    for(i<-a) concat+i
+    concat
+  }
 
-  override def max(a: List[Int]): Int = ???
+  override def max(a: List[Int]): Int = {
+    var max = a.head
+    a.foreach(e => max = if(e>max) e else max)
+    max
+  }
 }
 
 

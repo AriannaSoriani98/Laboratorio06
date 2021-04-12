@@ -1,8 +1,5 @@
 package u06lab.code
 
-import org.junit.jupiter.api.{Assertions, Test}
-import Assertions._
-
 class TryParsers {
   def parser = new BasicParser(Set('a', 'b', 'c'))
   // Note NonEmpty being "stacked" on to a concrete class
